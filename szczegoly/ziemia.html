@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ziemia - Przewodnik po Układzie Słonecznym</title>
+    <link rel="stylesheet" href="stylePlanet.css">
+    <script>
+        function galeria() {
+            var zdjacia = document.querySelectorAll("#galeria img");
+            for (var i = 0; i < zdjacia.length; i++) {
+                zdjacia[i].addEventListener('click', function () {
+                    this.classList.toggle("powieksz");
+                });
+            }
+        }
+        window.onload = galeria;
+    </script>
+</head>
+<body>
+<div id="kontener">
+    <div id="gornyPasek">
+        <a id="powrot" href="../index.html">&larr;</a>
+        <div id="tytul">Ziemia</div>
+        <div class="clear"></div>
+    </div>
+    <div id="opis">
+        <img src="../img/ziemia.jpg"/>
+        <p><b>Ziemia</b> – trzecia, licząc od Słońca, oraz piąta pod względem wielkości planeta Układu Słonecznego. Pod względem średnicy, masy i gęstości jest to największa planeta skalista Układu Słonecznego. Ziemia jest zamieszkana przez miliony gatunków, w tym przez człowieka. Jest jedynym znanym miejscem we Wszechświecie, w którym występuje życie. Według danych zebranych metodą datowania izotopowego, planeta uformowała się ok. 4,54 ± 0,05 mld lat temu.</p>
+
+        <p>W ciągu pierwszego miliarda lat po uformowaniu się Ziemi wewnątrz jej oceanów pojawiło się życie. Z żyjących na Ziemi organizmów żywych składa się biosfera, która wpływa na jej atmosferę, hydrosferę, litosferę i inne czynniki abiotyczne planety, umożliwiając rozwój i wzrost liczby organizmów aerobowych i anaerobowych oraz powstanie ozonosfery. Rozwój życia na lądzie i w wodzie umożliwiła powłoka ozonowa oraz ziemskie pole magnetyczne, zmniejszając natężenie promieniowania ultrafioletowego, oraz magnetosfera, odbijająca cząstki wiatru słonecznego i promieniowania kosmicznego. Dystans dzielący Słońce od Ziemi, jej właściwości fizyczne oraz jej historia geologiczna są najważniejszymi czynnikami, które pozwoliły organizmom żyć i ewoluować. Różnorodność biologiczna Ziemi nieustannie powiększa się, chociaż w dziejach życia Ziemi proces ten był kilkukrotnie przerywany, kiedy miało miejsce masowe wymieranie gatunków. Pomimo że naukowcy szacują, że ok. 99% gatunków organizmów żywych (ok. 5 mld) kiedykolwiek zamieszkujących Ziemię uważa się za wymarłe, wciąż mieszka na niej ok. 10–14 mln gatunków, z czego 1,2 mln zostało udokumentowanych.</p>
+
+        <p>Litosfera Ziemi dzieli się na kilkanaście płyt tektonicznych, które przesuwają się względem siebie w ciągu okresów trwających nawet przez wiele milionów lat. W ich trakcie dochodzi do znacznej zmiany położenia kontynentów. Powierzchnię w 70,8% zajmuje woda wszechoceanu zawarta w morzach i oceanach; pozostałe 29,2% stanowią kontynenty i wyspy, na powierzchni których znajdują się jeziora oraz inne źródła wody tworzące hydrosferę. Niezbędnej do życia na Ziemi wody w stanie ciekłym nie wykryto na powierzchni innych ciał niebieskich. Wnętrze Ziemi pozostaje aktywne; składa się z grubego i w dużej mierze stałego płaszcza, płynnego jądra zewnętrznego (generującego pole magnetyczne) oraz składającego się z żelaza stałego jądra wewnętrznego. Strefy podbiegunowe Ziemi są pokryte lodem wchodzącym w skład pokrywy lodowej Antarktydy (biegun południowy), pokrywy lodowej Grenlandii i lodu morskiego, w tym arktycznego paku lodowego (biegun północny).</p>
+
+        <p>Ziemia oddziałuje grawitacyjnie z innymi ciałami w przestrzeni kosmicznej, zwłaszcza z Księżycem i Słońcem. Planeta wykonuje jedno okrążenie wokół Słońca raz na każde 366,256 obrotów wokół własnej osi. Czas jednego okrążenia wokół Słońca nazywa się rokiem gwiazdowym i odpowiada 365,256 dniom czasu słonecznego. Nachylenie osi Ziemi do prostej prostopadłej do płaszczyzny orbity wynosi 23,44°, co prowadzi do rocznych wahań oświetlenia, które powodują m.in. występowanie na jej powierzchni pór roku, które tworzą rok zwrotnikowy. Wokół Ziemi krąży jeden naturalny satelita – Księżyc. Jego oddziaływanie grawitacyjne na Ziemię wywołuje pływy morskie, spowalnia jej rotację oraz stabilizuje kąt nachylenia osi obrotu względem orbity. Przypuszcza się, że orbituje on wokół Ziemi od ok. 4,53 mld lat. Bombardowanie przez komety we wczesnej historii Ziemi przyczyniło się do powstania oceanów, a upadki pojedynczych planetoid mogły prowadzić do niektórych masowych wymierań.</p>
+
+        <p>Ponad 7,6 mld ludzi zamieszkujących Ziemię w czerwcu 2018 jest zależnych od jej biosfery i minerałów. Zasoby naturalne skorupy ziemskiej i umiejętność ich przetworzenia zapewniają przetrwanie m.in. globalnej populacji ludzkiej. Populacja ta podzielona jest politycznie na około 200 suwerennych państw; ich mieszkańcy komunikują się między sobą drogą dyplomacji, konfliktów, podróży i środków komunikacji. W kulturze ludzkiej wykształciły się różne poglądy na temat planety, takie jak personifikacja w postaci bóstwa, wiara, że Ziemia jest płaska, oraz idea świata jako wrażliwego, zintegrowanego środowiska. Człowiek po raz pierwszy umownie opuścił Ziemię w 1961, kiedy Jurij Gagarin wyleciał lotem orbitalnym na około 2 godziny (jedno okrążenie) nieco ponad jej atmosferę, a w 1969 Neil Armstrong i Buzz Aldrin jako pierwsi wylądowali na powierzchni innego ciała niebieskiego – Księżyca.</p>
+
+        <p>Na ogół przewiduje się, że za około 7,59 mld lat planeta zostanie wchłonięta przez atmosferę Słońca i ulegnie zniszczeniu.</p>
+        <div class="clear"></div>
+    </div>
+    <div id="galeria">
+        <div class="tytul">Galeria</div>
+        <img src="../img/ziemia1.jpg">
+        <img src="../img/ziemia2.jpg">
+        <img src="../img/ziemia3.jpeg">
+        <img src="../img/ziemia4.jpg">
+    </div>
+    <div id="filmy">
+        <div class="tytul">Film</div>
+        <iframe class="film"src="https://www.youtube.com/embed/vqijdhQ8Xjg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+</div>
+</body>
+</html>

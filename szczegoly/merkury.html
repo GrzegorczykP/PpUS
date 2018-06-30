@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Merkury - Przewodnik po Układzie Słonecznym</title>
+    <link rel="stylesheet" href="stylePlanet.css">
+    <script>
+        function galeria() {
+            var zdjacia = document.querySelectorAll("#galeria img");
+            for (var i = 0; i < zdjacia.length; i++) {
+                zdjacia[i].addEventListener('click', function () {
+                    this.classList.toggle("powieksz");
+                });
+            }
+        }
+        window.onload = galeria;
+    </script>
+</head>
+<body>
+<div id="kontener">
+    <div id="gornyPasek">
+        <a id="powrot" href="../index.html">&larr;</a>
+        <div id="tytul">Merkury</div>
+        <div class="clear"></div>
+    </div>
+    <div id="opis">
+        <img src="../img/merkury.jpg"/>
+        <p><b>Merkury</b> – najmniejsza i najbliższa Słońcu planeta Układu Słonecznego. Jako planeta wewnętrzna znajduje się
+            dla ziemskiego obserwatora zawsze bardzo blisko Słońca, dlatego jest trudna do obserwacji. Mimo to należy do
+            planet widocznych gołym okiem i była znana już w starożytności. Merkurego dojrzeć można jedynie tuż przed
+            wschodem lub tuż po zachodzie Słońca.</p>
+
+        <p>Ukształtowanie powierzchni Merkurego przypomina Księżyc: są na nim liczne kratery uderzeniowe i praktycznie
+            pozbawiony jest atmosfery. Temperatura powierzchni waha się od −183 °C do 427 °C. W przeciwieństwie do
+            Księżyca, planeta ma jednak duże żelazne jądro, generujące pole magnetyczne o natężeniu stukrotnie mniejszym
+            od natężenia ziemskiego pola magnetycznego. Wielkość jądra powoduje, że Merkury ma jedną z największych
+            gęstości spośród planet Układu Słonecznego (nieznacznie większą ma Ziemia). Merkury nie ma naturalnych
+            satelitów.</p>
+
+        <p>Pierwsze udokumentowane obserwacje Merkurego sięgają pierwszego tysiąclecia p.n.e. Do IV wieku p.n.e. greccy
+            astronomowie uważali, że są to dwa ciała niebieskie: pierwsze widzialne tylko przed wschodem Słońca
+            (nazywali je Apollo), drugie widzialne tylko po zachodzie Słońca (nazywali je Hermesem). Za sprawą szybkiego
+            ruchu planety, powodowanego jej krótką orbitą, Rzymianie nadali planecie nazwę na cześć posłańca bogów i
+            patrona handlarzy – Merkurego. Symbol astronomiczny planety to stylizowana wersja kaduceusza Hermesa.</p>
+
+        <p>W porównaniu z innymi planetami Układu Słonecznego o Merkurym wiadomo stosunkowo niewiele; ze względu na
+            problemy natury technicznej zbadały go dotychczas tylko dwie sondy. Pierwsza z nich – Mariner 10 – wykonała
+            w latach 1974–1975 mapy 45% powierzchni. Następnie sonda MESSENGER podczas pierwszego przelotu 14 stycznia
+            2008 zobrazowała kolejne 30% powierzchni planety. MESSENGER zbliżył się do Merkurego ponownie 6 października
+            2008 i po raz trzeci 29 września 2009. Po tych przelotach sfotografowane było już 98% powierzchni, częściowo
+            jednak przy niekorzystnym oświetleniu, niesprzyjającym obserwacjom topografii. W marcu 2011 sonda weszła na
+            orbitę w celu zbadania i wykonania mapy całego globu. 30 kwietnia 2015 roku sonda zakończyła swoją misję,
+            planowo rozbijając się o powierzchnię Merkurego.</p>
+        <div class="clear"></div>
+    </div>
+    <div id="galeria">
+        <div class="tytul">Galeria</div>
+        <img src="../img/merkury1.jpg">
+        <img src="../img/merkury2.jpg">
+        <img src="../img/merkury3.jpg">
+        <img src="../img/merkury4.jpg">
+    </div>
+    <div id="filmy">
+        <div class="tytul">Filmy</div>
+        <iframe class="film"src="https://www.youtube.com/embed/nAhHcwDkiG8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe class="film"src="https://www.youtube.com/embed/in1jsYWJzgw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Przewodnik po Układzie Słonecznym</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+</head>
+<body onload="przewodnik.sterowanieStrona.rysujGwiazdy(600);przewodnik.sterowanieStrona.rysujPasAsteroid(1000, 100, 150);przewodnik.sterowanieStrona.skaluj();przewodnik.muzyka.inicjalizujMuzyke()">
+<canvas id="stars"></canvas>
+<div id='solar-syst'>
+    <div id='neptune' onmouseenter="przewodnik.sterowanieStrona.zmienStatusAnimacji('paused')"
+         onmouseleave="przewodnik.sterowanieStrona.zmienStatusAnimacji('running')">
+        <a href="szczegoly/neptun.html">
+            <div id="neptunePlanet" class="circle"
+                 onmouseenter="przewodnik.menuWysuwane.wyswietl('neptune')"
+                 onmouseleave="przewodnik.menuWysuwane.zamknij()"></div>
+        </a>
+        <div id='uranus'>
+            <a href="szczegoly/uran.html">
+                <div id="uranusPlanet" class="circle" onmouseenter="przewodnik.menuWysuwane.wyswietl('uranus')"
+                     onmouseleave="przewodnik.menuWysuwane.zamknij()"></div>
+            </a>
+            <div id='saturn'><p id='saturn-rings'></p>
+                <a href="szczegoly/saturn.html">
+                    <div id="saturnPlanet" class="circle" onmouseenter="przewodnik.menuWysuwane.wyswietl('saturn')"
+                         onmouseleave="przewodnik.menuWysuwane.zamknij()"></div>
+                </a>
+                <div id='jupiter'>
+                    <a href="szczegoly/jowisz.html">
+                        <div id="jupiterPlanet" class="circle"
+                             onmouseenter="przewodnik.menuWysuwane.wyswietl('jupiter')"
+                             onmouseleave="przewodnik.menuWysuwane.zamknij()"></div>
+                    </a>
+                    <a href="szczegoly/pas-planetoid.html">
+                        <canvas id='asteroidsBelt' width="300px" height="300px"
+                                onmouseenter="przewodnik.menuWysuwane.wyswietl('asteroidsBelt')"
+                                onmouseleave="przewodnik.menuWysuwane.zamknij()"></canvas>
+                    </a>
+                    <div id='mars'>
+                        <a href="szczegoly/mars.html">
+                            <div id="marsPlanet" class="circle"
+                                 onmouseenter="przewodnik.menuWysuwane.wyswietl('mars')"
+                                 onmouseleave="przewodnik.menuWysuwane.zamknij()"></div>
+                        </a>
+                        <div id='earth'>
+                            <a href="szczegoly/ziemia.html">
+                                <div id="earthPlanet" class="circle"
+                                     onmouseenter="przewodnik.menuWysuwane.wyswietl('earth')"
+                                     onmouseleave="przewodnik.menuWysuwane.zamknij()"></div>
+                            </a>
+                            <div id='venus'>
+                                <a href="szczegoly/wenus.html">
+                                    <div id="venusPlanet" class="circle"
+                                         onmouseenter="przewodnik.menuWysuwane.wyswietl('venus')"
+                                         onmouseleave="przewodnik.menuWysuwane.zamknij()"></div>
+                                </a>
+                                <div id='mercury'>
+                                    <a href="szczegoly/merkury.html">
+                                        <div id="mercuryPlanet" class="circle"
+                                             onmouseenter="przewodnik.menuWysuwane.wyswietl('mercury')"
+                                             onmouseleave="przewodnik.menuWysuwane.zamknij()"></div>
+                                    </a>
+                                    <a href="szczegoly/slonce.html">
+                                        <div id='sun' onmouseenter="przewodnik.menuWysuwane.wyswietl('sun')"
+                                             onmouseleave="przewodnik.menuWysuwane.zamknij()"></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="bottomMenu">
+    <div class="slider">
+        <p>Zmiana ilości gwiazd w tle</p>
+        <input type="range" min="0" max="2000" step="50" value="1000"
+               oninput="przewodnik.sterowanieStrona.rysujGwiazdy(value)">
+    </div>
+    <div class="slider">
+        <p>Zmiana prędkości obrotu</p>
+        <input type="range" min="10" max="25" step=".1" value="17.5"
+               oninput="przewodnik.sterowanieStrona.zmienSzybkoscObrotu(value)">
+    </div>
+    <div style="clear: both"></div>
+</div>
+<div id="menuWysuwane" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&larr;</a>
+    <div id="informacjeBok"></div>
+</div>
+<div id="sound">&#x1F508;</div>
+</body>
+</html>

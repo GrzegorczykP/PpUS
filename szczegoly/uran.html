@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Uran - Przewodnik po Układzie Słonecznym</title>
+    <link rel="stylesheet" href="stylePlanet.css">
+    <script>
+        function galeria() {
+            var zdjacia = document.querySelectorAll("#galeria img");
+            for (var i = 0; i < zdjacia.length; i++) {
+                zdjacia[i].addEventListener('click', function () {
+                    this.classList.toggle("powieksz");
+                });
+            }
+        }
+        window.onload = galeria;
+    </script>
+</head>
+<body>
+<div id="kontener">
+    <div id="gornyPasek">
+        <a id="powrot" href="../index.html">&larr;</a>
+        <div id="tytul">Uran</div>
+        <div class="clear"></div>
+    </div>
+    <div id="opis">
+        <img src="../img/uran.jpg"/>
+        <p><b>Uran</b> − gazowy olbrzym, siódma w kolejności od Słońca planeta Układu Słonecznego. Jest także trzecią pod względem wielkości i czwartą pod względem masy planetą naszego systemu. Nazwa planety pochodzi od Uranosa, który był bogiem i uosobieniem nieba w mitologii greckiej (klasyczna greka: Οὐρανός), ojcem Kronosa (Saturna) i dziadkiem Zeusa (Jowisza). Choć jest widoczny gołym okiem podobnie jak pięć innych planet, umknął uwadze starożytnych obserwatorów ze względu na niską jasność i powolny ruch po sferze niebieskiej. Sir William Herschel ogłosił odkrycie planety w dniu 13 marca 1781, po raz pierwszy w historii nowożytnej rozszerzając znane granice Układu Słonecznego. Uran to również pierwsza planeta odkryta przy pomocy teleskopu.</p>
+
+        <p>Uran budową i składem chemicznym przypomina Neptuna, a obie planety mają odmienną budowę i skład niż większe gazowe olbrzymy: Jowisz i Saturn. Astronomowie czasem umieszczają je w oddzielnej kategorii „lodowych olbrzymów”. Atmosfera Urana, chociaż – podobnie jak atmosfery Jowisza i Saturna – składa się głównie z wodoru i helu, zawiera więcej zamrożonych substancji lotnych (tzw. lodów) niż atmosfery większych planet-olbrzymów; są to substancje takie jak woda, amoniak i metan, oraz śladowe ilości węglowodorów. Jego atmosfera jest najzimniejszą atmosferą planetarną w Układzie Słonecznym; minimalna temperatura to 49 K (−224 °C). Ma ona złożoną, warstwową strukturę. Uważa się, że jej najniższe chmury tworzy woda, a najwyższa warstwa chmur jest utworzona z kryształków metanu. Z kolei wnętrze Urana składa się głównie z lodów i skał.</p>
+
+        <p>Podobnie jak inne planety-olbrzymy, Uran posiada system pierścieni, magnetosferę i liczne księżyce. System Urana ma unikatową konfigurację wśród planet, ponieważ jego oś obrotu jest silnie nachylona i znajduje się prawie w płaszczyźnie orbity planety. W tej sytuacji jego biegun północny i południowy leżą tam, gdzie równik większości innych planet. Widziane z Ziemi, pierścienie Urana czasami układają się wokół planety jak tarcza łucznicza, zaś księżyce planety krążą wokół niej jak wskazówki zegara, choć w 2007 i 2008 pierścienie planety były ustawione krawędzią do osi obserwacji. W 1986 obrazy z sondy Voyager 2 pokazały Urana jako planetę praktycznie pozbawioną wyróżniających się cech powierzchni w świetle widzialnym, bez pasm chmur i burz podobnych do istniejących na pozostałych planetach-olbrzymach. Jednak w ostatnich latach obserwacje prowadzone z Ziemi ukazały oznaki zmian pór roku i zwiększonej aktywności zjawisk pogodowych, gdy Uran zbliżył się do równonocy. Prędkość wiatru na Uranie może osiągnąć 250 metrów na sekundę (900 km/h).</p>
+        <div class="clear"></div>
+    </div>
+    <div id="galeria">
+        <div class="tytul">Galeria</div>
+        <img src="../img/uran1.jpg">
+        <img src="../img/uran2.jpg">
+        <img src="../img/uran3.jpg">
+        <img src="../img/uran4.jpg">
+    </div>
+    <div id="filmy">
+        <div class="tytul">Filmy</div>
+        <iframe class="film"src="https://www.youtube.com/embed/_vM-PDFsP98" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe class="film"src="https://www.youtube.com/embed/X-XlTTZn-Vc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+</div>
+</body>
+</html>

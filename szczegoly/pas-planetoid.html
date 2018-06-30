@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pas planetoid - Przewodnik po Układzie Słonecznym</title>
+    <link rel="stylesheet" href="stylePlanet.css">
+    <script>
+        function galeria() {
+            var zdjacia = document.querySelectorAll("#galeria img");
+            for (var i = 0; i < zdjacia.length; i++) {
+                zdjacia[i].addEventListener('click', function () {
+                    this.classList.toggle("powieksz");
+                });
+            }
+        }
+        window.onload = galeria;
+    </script>
+</head>
+<body>
+<div id="kontener">
+    <div id="gornyPasek">
+        <a id="powrot" href="../index.html">&larr;</a>
+        <div id="tytul">Pas planetoid</div>
+        <div class="clear"></div>
+    </div>
+    <div id="opis">
+        <img src="../img/pas_planetoid.png"/>
+        <p><b>Pas</b> planetoid – obszar Układu Słonecznego, znajdujący się między orbitami Marsa i Jowisza. Krąży w nim wiele ciał różnej wielkości, nazywanych planetoidami. Region ten nazywany jest też głównym pasem planetoid, gdyż w Układzie Słonecznym istnieją również inne zbiory małych ciał: Pas Kuipera, dysk rozproszony i hipotetyczny Obłok Oorta, oraz wiele mniejszych skupisk, w tym planetoidy bliskie Ziemi, centaury i trojańczycy.</p>
+
+        <p>Ponad połowę całkowitej masy pasa planetoid zawierają cztery największe znajdujące się w nim ciała: Ceres, Westa, Pallas i Hygiea. Mają one średnice większe niż 400 kilometrów, a największa z nich, Ceres, ma średnicę około 950 kilometrów i jest zaliczana do planet karłowatych. Pas planetoid jest tak rzadki, że wiele sond kosmicznych przelatywało przez niego bez natrafienia na żaden obiekt. Zderzenia pomiędzy planetoidami jednak się zdarzają, co prowadzi do ich kruszenia i powstawania rodzin planetoid o podobnych parametrach orbit i składzie chemicznym. Zderzenia takie powodują również powstawanie pyłu, który można obserwować w nocy jako światło zodiakalne. Skład chemiczny planetoid można określać, badając ich widmo optyczne. Dzięki temu wiadomo, że większość z nich można zaliczyć do trzech grup: węglowych (klasy C), krzemowych (klasy S) i metalicznych (klasy M).</p>
+
+        <p>Pas planetoid uformował się z mgławicy przedsłonecznej jako grupa planetozymali, małych prekursorów planet. Między Marsem a Jowiszem zaburzenia grawitacyjne nadawały tym planetozymalom zbyt duże prędkości, żeby mogły się one połączyć w wyniku akrecji w planetę. Planetozymale zderzały się z taką siłą, że zamiast łączyć się w większe obiekty, kruszyły się na mniejsze. Powstałe odłamki miały inne orbity niż ciała przed zderzeniem, często spadając potem na wewnętrzne planety Układu w postaci meteorytów. W ten sposób pas stracił większość swojej pierwotnej masy. Orbity planetoid wciąż ulegają perturbacjom, zwłaszcza gdy ich orbity wokół Słońca wchodzą w rezonans orbitalny z Jowiszem. Wtedy parametry ich orbit ulegają stosunkowo szybkiej zmianie, co prowadzi do usunięcia ich z tych orbit, co jest przyczyną powstania przerw Kirkwooda w pasie planetoid.</p>
+        <div class="clear"></div>
+    </div>
+    <div id="galeria">
+        <div class="tytul">Galeria</div>
+        <img src="../img/pas_planetoid1.gif">
+        <img src="../img/pas_planetoid2.jpg">
+    </div>
+    <div id="filmy">
+        <div class="tytul">Filmy</div>
+        <iframe class="film"src="https://www.youtube.com/embed/EYzdgdAHOMc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe class="film"src="https://www.youtube.com/embed/l9S0IeIFUYs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+</div>
+</body>
+</html>

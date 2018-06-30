@@ -1,0 +1,130 @@
+body {
+    background: radial-gradient(ellipse at bottom, #1C2837 0%, #050608 100%);
+    background-attachment: fixed;
+    font-family: "Lato", sans-serif;
+    color: azure;
+    margin: 0;
+}
+
+body a, body a:link {
+    color: azure;
+    text-decoration: none;
+}
+
+body a:hover {
+    color: gray;
+}
+
+#gorneMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1C2837;
+    margin-bottom: 10px;
+}
+
+#gorneMenu a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    width: 48px;
+    margin: auto;
+}
+
+#gorneMenu a:hover {
+    background: #f2f2f2;
+    color: #1C2837;
+    display: block;
+}
+
+#elementy {
+    margin: auto;
+    width: 240px;
+}
+
+#kontener {
+    width: 90%;
+    margin: auto;
+    display: block;
+}
+
+#gornyPasek {
+    margin: 30px;
+    text-align: center;
+    font-size: 48px;
+}
+
+#powrot {
+    float: left;
+}
+
+.tytul {
+    font-size: 48px;
+    text-align: center;
+    width: 100%;
+    margin: 16px auto;
+}
+
+#opis {
+    text-align: justify;
+    font-size: 16px;
+}
+
+#opis img {
+    float: left;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.clear {
+    clear: both;
+}
+
+#galeria {
+    font-size: 0;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#galeria img {
+    object-fit: cover;
+    margin: 0;
+    width: 50%;
+    height: 25vw;
+    transition: 1s;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+#galeria img:hover {
+    cursor: pointer;
+    z-index: 1;
+}
+
+div#galeria img:nth-child(even) {
+    transform-origin: left;
+}
+
+div#galeria img:nth-child(odd) {
+    transform-origin: right;
+}
+
+.powieksz {
+    transform: scale(2);
+    z-index: 2;
+}
+
+.film {
+    margin: 25px auto;
+    display: block;
+    width: 100%;
+    height: 50.625vw;
+}

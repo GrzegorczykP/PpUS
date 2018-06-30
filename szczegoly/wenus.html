@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wenus - Przewodnik po Układzie Słonecznym</title>
+    <link rel="stylesheet" href="stylePlanet.css">
+    <script>
+        function galeria() {
+            var zdjacia = document.querySelectorAll("#galeria img");
+            for (var i = 0; i < zdjacia.length; i++) {
+                zdjacia[i].addEventListener('click', function () {
+                    this.classList.toggle("powieksz");
+                });
+            }
+        }
+        window.onload = galeria;
+    </script>
+</head>
+<body>
+<div id="kontener">
+    <div id="gornyPasek">
+        <a id="powrot" href="../index.html">&larr;</a>
+        <div id="tytul">Wenus</div>
+        <div class="clear"></div>
+    </div>
+    <div id="opis">
+        <img src="../img/wenus.jpg"/>
+        <p><b>Wenus</b> – druga pod względem odległości od Słońca planeta Układu Słonecznego. Jest trzecim pod względem jasności
+        ciałem niebieskim widocznym na niebie, po Słońcu i Księżycu. Jej obserwowana wielkość gwiazdowa sięga −4,6m i
+        jest wystarczająca, aby światło odbite od Wenus powodowało powstawanie cieni. Ponieważ Wenus jest bliżej Słońca
+        niż Ziemia, zawsze jest widoczna w niewielkiej odległości kątowej od niego; jej maksymalna elongacja to 47,8°.
+            Odległość Wenus od Ziemi zmienia się w zakresie od ok. 40 mln km do ok. 259 mln km.</p>
+
+        <p>Nazwa planety wzięła się od rzymskiej bogini miłości, Wenus. Na niebie planeta jest widoczna tylko przez około
+        trzy godziny przed wschodem Słońca nad wschodnim horyzontem lub po zachodzie Słońca nad zachodnim
+        horyzontem. Nieodłączna towarzyszka wschodzącego i zachodzącego Słońca, nazywana jest także Gwiazdą Poranną
+        (Zaranną, Porankową) lub Jutrzenką (łac. Stella Matutina), kiedy zwiastuje wschód Słońca, albo Gwiazdą
+        Wieczorną, która finalizuje jego zachód.</p>
+
+        <p>Wenus jest klasyfikowana jako planeta skalista (inaczej: typu ziemskiego) i jest czasami nazywana „planetą
+        bliźniaczą” albo „siostrą Ziemi” – ze względu na podobną wielkość, masę i skład chemiczny. Jest pokryta
+        nieprzezroczystą warstwą dobrze odbijających światło chmur kwasu siarkowego, które nie pozwalają na obserwację
+        jej powierzchni z kosmosu w świetle widzialnym. Ma najgęstszą atmosferę ze wszystkich planet skalistych w
+        Układzie Słonecznym, składającą się głównie z dwutlenku węgla. Na Wenus nie ma obiegu węgla, który powodowałby
+        wiązanie węgla w skałach. Nie stwierdzono na niej również śladów organizmów żywych, które by go wiązały w
+        biomasie. Istnieją przypuszczenia, że w przeszłości na Wenus były oceany, tak jak na Ziemi, ale odparowały,
+        gdy temperatura powierzchni wzrosła. Obecny krajobraz Wenus jest suchy i pustynny, tworzony przez pokryte pyłem
+        skały. Woda w atmosferze najprawdopodobniej dysocjowała, a z powodu braku pola magnetycznego, wodór został
+        wywiany w przestrzeń międzyplanetarną przez wiatr słoneczny. Ciśnienie atmosferyczne na powierzchni planety
+        jest ok. 92 razy większe niż na Ziemi.</p>
+
+        <p>Ukształtowanie powierzchni Wenus było przedmiotem spekulacji aż do drugiej połowy XX wieku, gdy zostało zbadane
+        przez sondy Wenera i Magellan. Powierzchnia Wenus została ukształtowana przez zjawiska wulkaniczne, zachodzące w
+        skali znacznie większej niż na Ziemi, a duże stężenie związków siarki w atmosferze wskazuje na trwającą ciągle
+        aktywność wulkaniczną. Jednak brak obserwowanych przepływów lawy w okolicach odkrytych kalder pozostaje
+        zagadką. Jest niewiele widocznych kraterów uderzeniowych, co wskazuje, że powierzchnia jest stosunkowo młoda –
+        ma około 300–600 milionów lat. Nie ma śladów tektoniki płyt, prawdopodobnie dlatego, że jej skorupa jest
+        zbyt sztywna.</p>
+        <div class="clear"></div>
+    </div>
+    <div id="galeria">
+        <div class="tytul">Galeria</div>
+        <img src="../img/wenus1.jpg">
+        <img src="../img/wenus2.jpg">
+        <img src="../img/wenus3.jpg">
+        <img src="../img/wenus4.jpg">
+    </div>
+    <div id="filmy">
+        <div class="tytul">Filmy</div>
+        <iframe class="film"src="https://www.youtube.com/embed/DTB6JDdwBvE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe class="film"src="https://www.youtube.com/embed/pRn24ye-4O4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+</div>
+</body>
+</html>

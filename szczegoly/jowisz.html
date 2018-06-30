@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jowisz - Przewodnik po Układzie Słonecznym</title>
+    <link rel="stylesheet" href="stylePlanet.css">
+    <script>
+        function galeria() {
+            var zdjacia = document.querySelectorAll("#galeria img");
+            for (var i = 0; i < zdjacia.length; i++) {
+                zdjacia[i].addEventListener('click', function () {
+                    this.classList.toggle("powieksz");
+                });
+            }
+        }
+        window.onload = galeria;
+    </script>
+</head>
+<body>
+<div id="kontener">
+    <div id="gornyPasek">
+        <a id="powrot" href="../index.html">&larr;</a>
+        <div id="tytul">Jowisz</div>
+        <div class="clear"></div>
+    </div>
+    <div id="opis">
+        <img src="../img/jowisz.jpg"/>
+        <p><b>Jowisz</b> – piąta w kolejności oddalenia od Słońca i największa planeta Układu Słonecznego. Jego masa jest nieco mniejsza niż jedna tysięczna masy Słońca, a zarazem dwa i pół razy większa niż łączna masa wszystkich innych planet w Układzie Słonecznym. Wraz z Saturnem, tworzą grupę gazowych olbrzymów, nazywaną czasem również planetami jowiszowymi.</p>
+
+        <p>Planetę znali astronomowie w czasach starożytnych, była związana z mitologią i wierzeniami religijnymi wielu kultur. Rzymianie nazwali planetę na cześć najważniejszego bóstwa swojej mitologii – Jowisza. Obserwowany z Ziemi Jowisz może osiągnąć jasność do −2,95m. Jest to trzeci co do jasności naturalny obiekt na nocnym niebie po Księżycu i Wenus (okresowo, w momencie wielkiej opozycji, jasnością może mu dorównywać Mars).</p>
+
+        <p>Największa planeta Układu Słonecznego składa się w trzech czwartych z wodoru i w jednej czwartej z helu; może posiadać także skaliste jądro złożone z cięższych pierwiastków. Ze względu na szybką rotację przybiera kształt spłaszczonej elipsoidy obrotowej (ma niewielkie, ale zauważalne zgrubienie w płaszczyźnie równika). Powierzchnię planety, którą stanowią nieprzezroczyste wyższe warstwy atmosfery, pokrywa kilka warstw chmur, układających się w charakterystyczne pasy widoczne z Ziemi. Najbardziej znanym szczegółem jego powierzchni jest odkryta w XVII wieku przy pomocy teleskopu Wielka Czerwona Plama, będąca antycyklonem o średnicy większej niż średnica Ziemi. Wokół planety istnieją słabo widoczne pierścienie i potężna magnetosfera. Ma 69 znanych księżyców. Cztery największe, zwane galileuszowymi, odkrył Galileusz w 1610. Ganimedes, największy z księżyców, ma średnicę większą niż planeta Merkury.</p>
+
+        <p>Planeta była wielokrotnie badana przez sondy, zwłaszcza na początku programu Pioneer i programu Voyager, a następnie przez sondę Galileo. Od lipca 2016 roku na orbicie dookoła planety znajduje się sonda kosmiczna Juno, która ma okrążać ją i badać przez co najmniej dwa lata.</p>
+        <div class="clear"></div>
+    </div>
+    <div id="galeria">
+        <div class="tytul">Galeria</div>
+        <img src="../img/jowisz1.jpg">
+        <img src="../img/jowisz2.jpg">
+        <img src="../img/jowisz3.jpg">
+        <img src="../img/jowisz4.jpg">
+    </div>
+    <div id="filmy">
+        <div class="tytul">Filmy</div>
+        <iframe class="film"src="https://www.youtube.com/embed/-vKareD2Q3I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe class="film"src="https://www.youtube.com/embed/lDiIyDO-HI4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+</div>
+</body>
+</html>
