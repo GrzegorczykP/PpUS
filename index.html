@@ -74,6 +74,19 @@
         </div>
     </div>
 </div>
+<div id="bottomMenu">
+    <div class="slider">
+        <p>Zmiana ilości gwiazd w tle</p>
+        <input type="range" min="0" max="2000" step="50" value="1000"
+               oninput="przewodnik.sterowanieStrona.rysujGwiazdy(value)">
+    </div>
+    <div class="slider">
+        <p>Zmiana prędkości obrotu</p>
+        <input type="range" min="10" max="25" step=".1" value="17.5"
+               oninput="przewodnik.sterowanieStrona.zmienSzybkoscObrotu(value)">
+    </div>
+    <div style="clear: both"></div>
+</div>
 <div id="menuWysuwane" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&larr;</a>
     <div id="informacjeBok"></div>
