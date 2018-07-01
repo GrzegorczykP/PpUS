@@ -1,0 +1,1 @@
+Przewodnik po układzie słonecznym jest to strona internetowa stworzona jako projekt zaliczeniowy z przedmiotu "Multimedia". Przedstwia ona postawowe informacje o wszystkich planetach układu słonecznego.
